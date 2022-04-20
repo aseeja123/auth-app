@@ -1,0 +1,7 @@
+{
+  "name": "auth-task-app",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

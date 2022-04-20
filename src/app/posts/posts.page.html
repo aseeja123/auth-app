@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>posts</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-list>
+<ion-row>
+  <ion-col *ngFor="let post of posts">
+    {{post}}
+  </ion-col>
+</ion-row>
+</ion-list>
+<ion-infinite-scroll (ionInfinite)="scrollBottom(evant)">
+<ion-infinite-scroll-content loadingText="loading...">
+
+</ion-infinite-scroll-content>
+</ion-infinite-scroll>
+</ion-content>
